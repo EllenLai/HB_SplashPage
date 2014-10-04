@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
@@ -24,11 +25,10 @@
       <div id ="navigation-container">
         <nav>
               <ul>
-                  <li><a href="#">Lorem</a></li>
-                  <li><a href="#">Aliquam</a></li>
-                  <li><a href="#">Morbi</a></li>
-                  <li><a href="#">Praesent</a></li>
-                  <li><a href="#">Pellentesque</a></li>
+                  <li><a href="#">The Team</a></li>
+                  <li><a href="#">How It Works</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Sign up</a></li>
               </ul>
           </nav>
       </div>
@@ -37,16 +37,24 @@
 
         <div class="logo_container">
           <div class="main_logo">
-            <img src="new_hb_logo.png">
-            <p class="hb_title">HungryBelly</p>
+            <img class="fade-in" src="new_hb_logo.png"/>
+            <p class="hb_title fade-in2">HungryBelly</p>
           </div>
         </div>
+
+        <form class="updates fade-in2">
+          <p>Sign up for email notifications:</p>
+            <input class="email" type="email" name="email"> <span class="submit">Submit</span>
+          <p class="tiny">We're nice! We promise not to spam you.</p>
+          <i class="fa fa-chevron-down bounce fa-3x"></i>
+        </form>
 
         <p style="margin-top: 200px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. </p>
 
 
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -68,10 +76,10 @@
                 }
             });
 
-          $(document).ready(function(){
-            $(".main_logo").fadeIn(7000);
-            });
+
+
         </script>
+
 
 
     </body>

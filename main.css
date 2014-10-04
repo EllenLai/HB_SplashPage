@@ -59,6 +59,7 @@ table {
   -webkit-transition:background 0.8s ease ;
   color:#fff;
   font-weight:bold;
+  z-index: 3;
   }
 
 #navigation-container a {
@@ -68,12 +69,13 @@ table {
 
 #navigation-container ul {
   list-style:none;
-  padding:10px;
+  margin-right: 35px;
   }
 
 #navigation-container ul li{
   float:right;
   margin-right:20px;
+  padding: 7px 10px;
   }
 
 #content-container {
@@ -86,10 +88,6 @@ table {
   background: rgba(238, 70, 35, 1);
 }
 
-
-.logo_container {
-
-}
 
 .main_logo {
   margin: 0 auto;
@@ -106,4 +104,101 @@ table {
   font-size: 4rem;
   font-weight: 900;
   font-family: 'Cabin', sans-serif;
+}
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  animation-duration:0.5s;
+}
+
+
+.fade-in2{
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+
+.fade-in2 {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+.updates {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.email {
+  border: 2.5px solid #4aa3df;
+font-size: 1.3rem;
+border-radius: 4px;
+}
+
+
+
+.bounce {
+  position:absolute;
+  left:50%;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-25px;
+  height:50px;
+  width:50px;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%{
+    bottom:5px;
+  }
+
+  25%, 75% {
+    bottom:15px;
+  }
+
+
+  50% {
+    bottom:20px;
+  }
+
+  100% {
+    bottom:0;
+  }
+}
+
+.fa-chevron-down {
+  color: #bdc3c7;
 }
